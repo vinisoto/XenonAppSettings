@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  appsettings:
+    image: ${DOCKER_REGISTRY-}appsettings
+    build:
+      context: .\AppSettings
+      dockerfile: Dockerfile
